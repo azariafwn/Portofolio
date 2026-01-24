@@ -3,9 +3,12 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { avatarAnimation } from 'config/animations'
 import dynamic from 'next/dynamic'
 
-const Player = dynamic(
+const Player = dynamic<any>(
   () => import('@lottiefiles/react-lottie-player').then((mod) => mod.Player),
-  { ssr: false }
+  { 
+    ssr: false,
+    loading: () => <Box boxSize={{ base: '200px', md: '300px', lg: '350px' }} />
+  }
 )
 
 const Avatar = () => {
