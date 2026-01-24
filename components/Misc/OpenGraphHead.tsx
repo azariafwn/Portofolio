@@ -8,7 +8,7 @@ const OpenGraphHead = () => (
     <meta property="og:url" content="https://azariafwn.vercel.app/" />
     <meta
       property="og:description"
-      content="Ohh you found me? Holla! I am Azaria Putri Fawnia. I am a Fullstack Dev & QA Engineer"
+      content="Holla! I am Azaria Putri Fawnia. I am a Fullstack Dev & QA Engineer"
     />
     <meta property="og:type" content="profile" />
     <meta
