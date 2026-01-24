@@ -1,0 +1,27 @@
+/* Memberikan indikator visual bahwa tab bisa di-scroll */
+.experienceTabs::-webkit-scrollbar {
+  height: 4px; /* Tinggi scrollbar horizontal */
+}
+
+.experienceTabs::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.experienceTabs::-webkit-scrollbar-thumb {
+  background: var(--chakra-colors-teal-500); /* Gunakan warna tema kamu */
+  border-radius: 10px;
+}
+
+/* Opsional: Sembunyikan scrollbar di Desktop tapi munculkan di Mobile */
+@media (min-width: 768px) {
+  .experienceTabs::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Memberikan efek spacing antar item di mobile */
+.experienceTabs {
+  display: flex;
+  gap: 10px; /* Jarak antar tab */
+  padding-bottom: 10px; /* Ruang untuk scrollbar */
+}
