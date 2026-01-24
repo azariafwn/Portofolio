@@ -17,6 +17,8 @@ import {
   SiDotNet, SiFlutter, SiPostgresql, SiMysql, SiMicrosoftazure, 
   SiPython, SiTensorflow, SiArduino, SiDocker, SiNodeDotJs, 
   SiPhp, SiCplusplus,
+  SiPostman,
+  SiGooglesheets,
 } from 'react-icons/si'
 import { FaPhp } from 'react-icons/fa'
 
@@ -124,12 +126,12 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={6}
-            title="Applicant Management Web"
-            description="A streamlined management system for tracking job applicants, featuring an interactive UI and optimized data handling."
-            src="/works/applicant.png"
-            stack={[SiDotNet, SiMysql]}
+            title="Quality Assurance - SaaS IoT Platform"
+            description="Led the end-to-end manual testing process for a professional SaaS IoT ecosystem. Managed over 110+ comprehensive test cases, including functional, regression, and black-box testing to ensure high-standard system reliability and seamless user experience."
+            src="/works/qa-saas.png"
+            stack={[SiPostman, SiGooglesheets]}
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            ctaUrl="https://github.com/azariafwn/Applicant_web"
+            ctaUrl="#"
             isMobile={isMobile}
           />
         </MotionGridItem>

@@ -18,6 +18,8 @@ import { motion } from 'framer-motion'
 import styles from './styles.module.css'
 import { easing, DURATIONS } from 'config/animations'
 import { IconType } from 'react-icons'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { SiGooglecloud } from 'react-icons/si'
 
 export type FeaturedCardProps = {
   height: string | ResponsiveValue<any>
@@ -128,15 +130,19 @@ const ProjectDescription = ({
 
       <Button
         variant="outlineAlternative"
-        fontWeight="light"
-        fontSize={{ base: 'sm', '2xl': 'md' }}
-        size="sm"
         as="a"
         href={ctaUrl}
+        target={ctaUrl === "#" ? "_self" : "_blank"} // Jika # tetap di halaman yang sama
         rel="noreferrer"
-        target="_blank"
+        leftIcon={ctaUrl === "#" ? <SiGooglecloud /> : <ExternalLinkIcon />} // Opsional: ganti ikon
+        isDisabled={ctaUrl === "#"} // Membuat tombol tidak bisa diklik jika #
+        _disabled={{
+          opacity: 0.7,
+          cursor: "not-allowed",
+          _hover: { bg: "transparent" }
+        }}
       >
-        View Project
+        {ctaUrl === "#" ? "Internal Company Project" : "View Project"}
       </Button>
     </Container>
   )
