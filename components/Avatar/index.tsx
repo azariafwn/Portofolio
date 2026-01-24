@@ -32,7 +32,7 @@ const Avatar = () => {
         <Player
           autoplay
           loop
-          src="/lottie/tech.json"
+          src="/lottie/Tech.json"
           // Pakai style 100% agar Player mengikuti ukuran Box (MotionBox) di atas
           style={{ height: '100%', width: '100%' }}
         />
