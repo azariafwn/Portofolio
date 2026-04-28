@@ -1,5 +1,5 @@
 import { memo } from 'react'
-import { useColorMode, useBreakpointValue, Box, Image } from '@chakra-ui/react' // Tambah Image di sini
+import { useColorMode, useBreakpointValue, Box, Image } from '@chakra-ui/react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { mobileBreakpointsMap } from 'config/theme'
@@ -21,7 +21,7 @@ const Logo = () => {
           cursor="pointer"
         >
           <Image
-            src="public/logo-ZAF.jpg" 
+            src="/logo-ZAF.jpg" 
             alt="ZAF Logo"
             htmlWidth={isMobile ? "40px" : "50px"} 
             htmlHeight={isMobile ? "40px" : "50px"}
