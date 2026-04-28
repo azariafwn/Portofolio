@@ -1,7 +1,13 @@
 import Head from 'next/head'
+
 const OpenGraphHead = () => (
   <Head>
     <title>Zafaa | Fullstack Dev & QA Engineer</title>
+    
+    {/* Favicon / Logo di Tab Browser */}
+    <link rel="icon" href="/logo-ZAF.jpg" />
+    <link rel="apple-touch-icon" href="/logo-ZAF.jpg" />
+
     <meta name="description" content="My personal solace place on web-earth." />
     <meta property="og:title" content="Zafaa | Fullstack Dev & QA Engineer" />
     <meta property="og:site_name" content="Azaria Putri Fawnia" />
@@ -14,7 +20,8 @@ const OpenGraphHead = () => (
     <meta
       property="og:image"
       content="https://azariafwn.vercel.app/zaf.png"
-    ></meta>
+    />
   </Head>
 )
+
 export default OpenGraphHead
