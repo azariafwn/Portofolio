@@ -1,5 +1,6 @@
 import {
   Stack,
+  HStack,
   Heading,
   Text,
   Button,
@@ -119,23 +120,42 @@ const Sidebar = () => {
             and ensuring they don't crash. I bridge the gap between development, quality, 
             and the physical world through my passion for <b>IoT and hardware</b>.
           </MotionText>
-          <MotionButton
-            size="lg"
-            variant="outline"
-            borderWidth="1px"
-            borderRadius="0"
-            fontWeight="normal"
-            fontSize="sm"
-            width="120px"
-            variants={simpleOpacity}
-            as={'a'}
-            href="mailto:zafawniar@gmail.com"
-            target="_blank"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            Get in touch!
-          </MotionButton>
+          <HStack spacing={4} variants={fadeInUp}>
+            <MotionButton
+              size="lg"
+              variant="outline"
+              borderWidth="1px"
+              borderRadius="0"
+              fontWeight="normal"
+              fontSize="sm"
+              width="130px"
+              as={'a'}
+              href="mailto:zafawniar@gmail.com"
+              target="_blank"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              Get in touch!
+            </MotionButton>
+
+            <MotionButton
+              size="lg"
+              variant="outline"
+              borderWidth="1px"
+              borderRadius="0"
+              fontWeight="normal"
+              fontSize="sm"
+              width="130px"
+              as={'a'}
+              href="/CV-Azaria-Putri-Fawnia.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              Download CV
+            </MotionButton>
+          </HStack>
 
           <MotionBox d="flex" variants={simpleOpacity}>
             {SocialMedias.map((socMedia) => (
